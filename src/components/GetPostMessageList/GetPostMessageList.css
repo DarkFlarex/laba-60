@@ -1,0 +1,10 @@
+.Message{
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: column;
+    border: 1px solid silver;
+}
+
+.massage-text{
+   margin-bottom: 5px;
+}
