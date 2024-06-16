@@ -1,11 +1,11 @@
 import {GetProps} from "../../type";
 import {useEffect, useState} from "react";
-import GetPostMessageList from "../../components/GetPostMessageList/GetPostMessageList";
-import "./GetPostMessage.css";
+import GetMessageList from "../../components/GetMessageList/GetMessageList";
+import "./GetMessage.css";
 
 const url = 'http://146.185.154.90:8000/messages';
 
-const GetPostMessage = () => {
+const GetMessage = () => {
 
     const [showMessage, setShowMessage] = useState<GetProps[]>([]);
 
@@ -30,7 +30,7 @@ const GetPostMessage = () => {
         <div>
             <div className="Message-list">
                 {showMessage.map((message) => (
-                    <GetPostMessageList
+                    <GetMessageList
                         key={message._id}
                         messages={message}
                     />
@@ -40,4 +40,4 @@ const GetPostMessage = () => {
     );
 };
 
-export default GetPostMessage;
+export default GetMessage;

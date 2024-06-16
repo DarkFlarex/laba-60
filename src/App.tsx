@@ -1,11 +1,13 @@
 import './App.css'
-import GetPostMessage from "./containers/GetPostMessage/GetPostMessage";
+import GetMessage from "./containers/GetMessage/GetMessage";
+import PostMessage from "./containers/PostMessage/PostMessage";
 
 function App() {
 
   return (
     <>
-      <GetPostMessage/>
+      <GetMessage/>
+      <PostMessage/>
     </>
   )
 }

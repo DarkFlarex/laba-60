@@ -1,11 +1,11 @@
 import {GetProps} from "../../type";
-import './GetPostMessageList.css';
+import './GetMessageList.css';
 
 interface Props {
   messages:GetProps;
 }
 
-const GetPostMessageList:React.FC<Props> = ({messages}) => {
+const GetMessageList:React.FC<Props> = ({messages}) => {
     return (
         <div className="Message">
             <span className="massage-text">Id:{messages._id}</span>
@@ -16,4 +16,4 @@ const GetPostMessageList:React.FC<Props> = ({messages}) => {
     );
 };
 
-export default GetPostMessageList;
+export default GetMessageList;
