@@ -23,11 +23,20 @@ const GetMessage = () => {
             setShowMessage(newShowMessage);
         }
         };
-        void fetchData()
+
+        void fetchData();
+
+        const interval = setInterval(() => {
+            fetchData();
+        }, 3000);
+
+        return () =>{
+            clearInterval(interval)
+        };
     }, []);
 
     return (
-        <div>
+        <>
             <div className="Message-list">
                 {showMessage.map((message) => (
                     <GetMessageList
@@ -36,7 +45,7 @@ const GetMessage = () => {
                     />
                 ))}
             </div>
-        </div>
+        </>
     );
 };
 
