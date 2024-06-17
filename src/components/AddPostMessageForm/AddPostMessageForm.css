@@ -1,0 +1,36 @@
+.AddMessageForm {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 25px 55px;
+    background-color: #424764;
+}
+.AddMessageForm-input,
+.AddAuthorForm-input{
+    padding: 10px;
+    background-color: #676F8D;
+    border-radius: 5px;
+    color: #fff;
+}
+
+::placeholder {
+    color: white;
+}
+
+.AddMessageForm-btn{
+    padding: 12px 30px;
+    background-color: #ffb17a;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.AddMessageForm-btn:hover{
+    box-shadow:2px 2px 8px #ffb17a;
+}
