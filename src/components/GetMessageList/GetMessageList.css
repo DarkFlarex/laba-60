@@ -1,8 +1,12 @@
 .Message{
     display: flex;
     margin-bottom: 25px;
+    padding: 15px 25px;
     flex-direction: column;
-    border: 1px solid silver;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #676F8D;
 }
 
 .massage-text{

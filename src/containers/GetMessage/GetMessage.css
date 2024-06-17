@@ -1,4 +1,6 @@
 .Message-list{
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
